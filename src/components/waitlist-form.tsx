@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useMutation } from "@tanstack/react-query";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -12,6 +13,7 @@ interface WaitlistFormData {
     email: string;
     tradingPreference: string;
     interestLevel: string;
+    turnstileToken: string;
 }
 
 async function submitWaitlist(data: WaitlistFormData) {
@@ -35,7 +37,9 @@ export function WaitlistForm() {
     const [email, setEmail] = useState("");
     const [tradingPreference, setTradingPreference] = useState("");
     const [interestLevel, setInterestLevel] = useState("");
+    const [turnstileToken, setTurnstileToken] = useState("");
     const [formError, setFormError] = useState("");
+    const turnstileRef = useRef<TurnstileInstance>(null);
 
     const mutation = useMutation({
         mutationFn: submitWaitlist,
@@ -43,7 +47,9 @@ export function WaitlistForm() {
             setEmail("");
             setTradingPreference("");
             setInterestLevel("");
+            setTurnstileToken("");
             setFormError("");
+            turnstileRef.current?.reset();
         },
         onError: (error: Error) => {
             setFormError(error.message);
@@ -66,8 +72,12 @@ export function WaitlistForm() {
             setFormError("Please select your interest level");
             return;
         }
+        if (!turnstileToken) {
+            setFormError("Please complete the security check");
+            return;
+        }
 
-        mutation.mutate({ email, tradingPreference, interestLevel });
+        mutation.mutate({ email, tradingPreference, interestLevel, turnstileToken });
     };
 
     if (mutation.isSuccess) {
@@ -190,6 +200,21 @@ export function WaitlistForm() {
                     {formError && (
                         <p className="text-red-500 text-sm">{formError}</p>
                     )}
+
+                    {/* Turnstile */}
+                    <div className="flex justify-center">
+                        <Turnstile
+                            ref={turnstileRef}
+                            siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY || ""}
+                            onSuccess={setTurnstileToken}
+                            onError={() => setFormError("Security check failed. Please try again.")}
+                            onExpire={() => setTurnstileToken("")}
+                            options={{
+                                theme: "auto",
+                                size: "flexible",
+                            }}
+                        />
+                    </div>
 
                     {/* Submit Button */}
                     <Button

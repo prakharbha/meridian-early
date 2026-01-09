@@ -6,7 +6,7 @@ import { join } from "path";
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { email, tradingPreference, interestLevel } = body;
+        const { email, tradingPreference, interestLevel, turnstileToken } = body;
 
         // Validate required fields
         if (!email || !tradingPreference || !interestLevel) {
@@ -14,6 +14,37 @@ export async function POST(request: NextRequest) {
                 { message: "All fields are required" },
                 { status: 400 }
             );
+        }
+
+        // Validate Turnstile Token
+        const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
+        if (turnstileSecret) {
+            if (!turnstileToken) {
+                return NextResponse.json(
+                    { message: "Security check required" },
+                    { status: 400 }
+                );
+            }
+
+            const verifyUrl = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+            const formData = new URLSearchParams();
+            formData.append('secret', turnstileSecret);
+            formData.append('response', turnstileToken);
+            const ip = request.headers.get('x-forwarded-for') as string;
+            if (ip) formData.append('remoteip', ip);
+
+            const result = await fetch(verifyUrl, {
+                body: formData,
+                method: 'POST',
+            });
+
+            const outcome = await result.json();
+            if (!outcome.success) {
+                return NextResponse.json(
+                    { message: "Security check failed" },
+                    { status: 400 }
+                );
+            }
         }
 
         // Validate email format
