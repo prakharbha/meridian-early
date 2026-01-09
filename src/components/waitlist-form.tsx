@@ -119,7 +119,7 @@ export function WaitlistForm() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Email Field */}
                     <div className="space-y-2">
                         <Label htmlFor="email" className="text-neutral-700 dark:text-neutral-200">
@@ -202,7 +202,7 @@ export function WaitlistForm() {
                     )}
 
                     {/* Turnstile */}
-                    <div className="flex justify-center">
+                    <div className="flex justify-center -my-3 scale-75 origin-center h-12 overflow-hidden">
                         <Turnstile
                             ref={turnstileRef}
                             siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY || ""}
@@ -211,7 +211,7 @@ export function WaitlistForm() {
                             onExpire={() => setTurnstileToken("")}
                             options={{
                                 theme: "auto",
-                                size: "flexible",
+                                size: "compact",
                             }}
                         />
                     </div>
