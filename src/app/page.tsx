@@ -31,7 +31,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative z-10 pt-24">
         {/* Hero Section */}
-        <section className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <section className="max-w-6xl mx-auto px-6 py-8 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left Column - Content */}
             <div className="space-y-6">
@@ -52,12 +52,12 @@ export default function Home() {
                 <div className="flex items-center gap-3 text-neutral-700 dark:text-neutral-300">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                   <span>
-                    <strong>Founding members:</strong> $300/month — locked forever
+                    <strong>Introductory Price:</strong> $300/month (Standard: $600/mo)
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Only 25 spots at this price</span>
+                  <span>Lock in $300/mo for life — First 25 members only</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
