@@ -6,12 +6,12 @@ import { join } from "path";
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { email, tradingPreference, interestLevel, turnstileToken } = body;
+        const { email, tradingPreference = "N/A", interestLevel = "N/A", turnstileToken } = body;
 
         // Validate required fields
-        if (!email || !tradingPreference || !interestLevel) {
+        if (!email) {
             return NextResponse.json(
-                { message: "All fields are required" },
+                { message: "Email is required" },
                 { status: 400 }
             );
         }
