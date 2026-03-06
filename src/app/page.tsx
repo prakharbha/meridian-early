@@ -1,17 +1,16 @@
 import { WaitlistForm } from "@/components/waitlist-form";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { StaticBackground } from "@/components/parallax-background";
 import { CompassLogo } from "@/components/compass-pointer";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white transition-colors relative">
+    <div className="min-h-screen bg-[#FAFAFA] text-neutral-900 relative">
       {/* Static Background */}
       <StaticBackground />
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
           {/* Left spacer */}
           <div />
@@ -23,7 +22,6 @@ export default function Home() {
 
           {/* Right - Controls (hidden on mobile) */}
           <div className="hidden md:flex items-center justify-end">
-            <ThemeToggle />
           </div>
         </div>
       </header>
@@ -31,125 +29,161 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative z-10 pt-24">
         {/* Hero Section */}
-        <section className="max-w-6xl mx-auto px-6 py-8 md:py-24">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            {/* Left Column - Content */}
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-light leading-tight text-neutral-900 dark:text-white">
-                  Trade Like the Institutions Do
-                </h1>
-                <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400">
-                  The same frameworks used to manage $100M+ in FX, crypto, and futures — now available to you.
-                </p>
-              </div>
-
-              <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                30+ years of institutional experience distilled into actionable setups. Learn to read structure, momentum, and market narrative like a professional PM.
-              </p>
-
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center gap-3 text-neutral-700 dark:text-neutral-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                  <span>
-                    <strong>Limited Spots:</strong> $300/mo <span className="line-through text-neutral-400">$600/mo</span>
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-6xl mx-auto px-6 py-20 md:py-32">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+              {/* Left Column - Content */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                    MERIDIAN COMPASS
                   </span>
+                  <h1 className="text-2xl md:text-3xl font-light leading-tight text-neutral-900">
+                    Private Institutional Market Intelligence — Delivered Daily
+                  </h1>
                 </div>
-                <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
-                  <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Lock in $300/mo for life — Next 25 members only</span>
+
+                <div className="space-y-6 text-neutral-600 leading-relaxed font-light text-lg">
+                  <p>
+                    Real-time market structure, positioning, and risk context from a 30-year institutional portfolio manager.
+                  </p>
+                  <p>
+                    The same institutional frameworks I use in managing capital — now shared privately with a focused group of independent traders.
+                  </p>
                 </div>
-                <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
-                  <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Opening Q1 2026</span>
-                </div>
+
+                <p className="font-medium text-neutral-900">
+                  The channel is active now. Founding members are already inside.
+                </p>
+
+
+
               </div>
 
-              {/* Testimonial */}
-              <div className="mt-2 space-y-3">
-                <p className="text-xs font-medium uppercase tracking-widest text-neutral-900 dark:text-neutral-100">What Members Say</p>
-                <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5">
-                  <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
-                    &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
-                  </p>
-                  <div className="mt-3 flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-[10px] font-medium text-neutral-600 dark:text-neutral-300">
-                      BD
-                    </div>
-                    <p className="text-xs font-medium text-neutral-700 dark:text-neutral-300">Brian Delahanty</p>
-                  </div>
-                </div>
+              {/* Right Column - Form */}
+              <div className="flex justify-center md:justify-end">
+                <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Right Column - Form */}
-            <div className="flex justify-center md:justify-end">
-              <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
+        {/* Section 2 - Objective */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
+
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                  Objective
+                </h2>
+                <div className="space-y-4 text-neutral-600 font-light text-lg leading-relaxed">
+                  <p>
+                    To create an environment that simulates sitting on a real trading desk — learning how to map structure, identify key levels, and trade around them in real time.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-12 border-t border-neutral-200">
+                <ul className="space-y-4 text-neutral-600 font-light text-lg">
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Real-time context as inflection points develop — not forced daily posts</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Clear structure mapping: trend, liquidity, positioning, exhaustion</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Institutional frameworks for momentum, divergence, and narrative shifts</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Cross-market perspective across BTC, FX, and futures</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Private Telegram broadcast (one-way, no group chat noise)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="space-y-6 pt-12 border-t border-neutral-200">
+                <p className="text-lg text-neutral-600 font-light">
+                  No constant posting. No recycled content. No signal chasing.
+                </p>
+                <div className="space-y-2">
+                  <p className="font-medium text-neutral-900 text-xl">
+                    This is not a signal service.
+                  </p>
+                  <p className="text-lg text-neutral-600 font-light">
+                    You will learn how to map structure and read positioning in real time.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
 
 
-        {/* Footer */}
-        <footer className="relative z-20 mt-8 bg-neutral-950 text-white">
-          <div className="max-w-6xl mx-auto px-6 py-6">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              {/* Logo */}
-              <div className="flex items-center gap-2">
-                <span className="text-lg font-light tracking-[0.15em]">MERIDIAN</span>
-                <span className="text-lg font-extralight tracking-[0.15em] text-neutral-400">COMPASS</span>
-              </div>
+        {/* Section 6 - About Mark */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
 
-              {/* Tagline */}
-              <div className="text-center hidden md:block">
-                <p className="text-neutral-400 text-xs whitespace-nowrap">
-                  Institutional Market Frameworks for FX, Crypto & Global Futures
-                </p>
-              </div>
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                  ABOUT MARK SCHAEFER
+                </h2>
+                <div className="text-lg text-neutral-600 font-light leading-relaxed space-y-6">
+                  <p>
+                    30+ years managing institutional capital across FX, futures, and crypto.
+                  </p>
 
-              {/* Social Links */}
-              <div className="flex items-center justify-end gap-4">
-                <Link
-                  href="https://twitter.com/schaef45809"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-white transition-colors"
-                  aria-label="X (Twitter)"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/markschaefer4/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-white transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </Link>
+                  <div className="space-y-2">
+                    <p><strong>Barclays</strong> — Head British Pound Trader / Market Maker</p>
+                    <p><strong>ABN Amro</strong> — Proprietary FX Trading</p>
+                    <p><strong>Eagle Trading Systems</strong> — PM, Systematic FX & Futures (managed hundreds of millions)</p>
+                    <p><strong>Centiva Capital</strong> — PM, Systematic Currencies</p>
+                  </div>
+
+                  <p>
+                    Built and managed a currency-only strategy that raised over $300M during the financial crisis and delivered +25% in 2008 and +23% in 2009.
+                  </p>
+
+                  <div className="space-y-4 pt-4">
+                    <h3 className="text-xl font-medium text-neutral-900">Currently:</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Managing capital through systematic currency strategies</li>
+                      <li>Providing real-time market intelligence to hedge funds, refiners, and institutional energy clients — covering crude oil, natural gas, and refined products across physical, futures, and options markets</li>
+                    </ul>
+                  </div>
+
+                  <p className="pt-4">
+                    Meridian Compass extends that same real-time structural framework across FX, futures, and crypto.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Bottom Bar */}
-            <div className="mt-4 pt-4 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-neutral-300">
-              <p>© 2026 Meridian Compass. All rights reserved.</p>
-              {/* Theme toggle for mobile */}
-              <div className="md:hidden">
-                <ThemeToggle />
-              </div>
-              <Link
-                href="https://www.nandann.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden md:block hover:text-white transition-colors"
-              >
-                Website by Nandann Creative
-              </Link>
-            </div>
+
+        {/* Section 10 - Disclaimer */}
+        <section className="w-full bg-[#FAFAFA] border-t border-neutral-200">
+          <div className="max-w-4xl mx-auto px-6 py-12 md:py-16 text-xs text-neutral-500 font-light space-y-4 leading-relaxed">
+            <p>
+              Educational and informational purposes only. Not investment advice. Trading involves risk. Past performance is not indicative of future results.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 11 - Footer */}
+        <footer className="w-full bg-white border-t border-neutral-200 text-neutral-900">
+          <div className="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-neutral-500 font-light">
+            <p>© 2026 Meridian Compass</p>
           </div>
         </footer>
       </main>
