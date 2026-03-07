@@ -1,6 +1,7 @@
 import { WaitlistForm } from "@/components/waitlist-form";
 import { StaticBackground } from "@/components/parallax-background";
 import { CompassLogo } from "@/components/compass-pointer";
+import { SchedulingModal } from "@/components/scheduling-modal";
 import Link from "next/link";
 
 export default function Home() {
@@ -61,8 +62,12 @@ export default function Home() {
               </div>
 
               {/* Right Column - Form */}
-              <div className="flex justify-center md:justify-end">
+              <div className="flex flex-col items-center md:items-end space-y-4">
                 <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
+
+                <div className="w-full max-w-lg flex flex-col items-center">
+                  <SchedulingModal />
+                </div>
               </div>
             </div>
           </div>

@@ -191,7 +191,7 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                                 {mutation.isPending ? "Submitting..." : "Request Founding Access"}
                             </Button>
                             <p className="text-center text-xs mt-3 text-neutral-500 px-2 leading-relaxed">
-                                Access is limited. Most applicants speak with Mark briefly before entry.
+                                If you’re unsure whether Meridian Compass is the right fit, feel free to reach out before requesting access.
                             </p>
                         </div>
                     </form>
