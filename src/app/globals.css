@@ -123,3 +123,55 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Telegram page theme */
+.telegram-theme {
+  --background: #0f1419;
+  --foreground: #f5f3ff;
+  --card: #1a1f2e;
+  --card-foreground: #f5f3ff;
+  --popover: #1a1f2e;
+  --popover-foreground: #f5f3ff;
+  --primary: #f59e0b;
+  --primary-foreground: #0f1419;
+  --secondary: #64748b;
+  --secondary-foreground: #f5f3ff;
+  --muted: #334155;
+  --muted-foreground: #cbd5e1;
+  --accent: #f59e0b;
+  --accent-foreground: #0f1419;
+  --destructive: #ef4444;
+  --border: #334155;
+  --input: #1a1f2e;
+  --ring: #f59e0b;
+  color-scheme: dark;
+}
+
+.institutional-card {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  padding: 1.5rem;
+  color: var(--card-foreground);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+  transition: all .3s;
+}
+.institutional-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-glow-amber {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(245,158,11,.4)); }
+  50% { filter: drop-shadow(0 0 20px rgba(245,158,11,.8)); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp .6s ease-out both;
+}
+.pulse-glow {
+  animation: pulse-glow-amber 2s infinite;
+}
