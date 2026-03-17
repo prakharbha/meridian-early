@@ -99,7 +99,7 @@ export default function TelegramPage() {
                   <div className="space-y-3">
                     <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Real-time Structure Mapping</h3>
                     <p style={{ color: "#cbd5e1" }}>
-                      Trend identification, liquidity analysis, positioning assessment, and exhaustion signals delivered as market inflection points develop—not forced daily posts.
+                      Trend identification, liquidity analysis, and positioning insights highlighting key market inflection points.
                     </p>
                   </div>
                 </div>
