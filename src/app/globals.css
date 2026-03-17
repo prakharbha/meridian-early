@@ -125,7 +125,25 @@
 }
 
 /* Telegram page theme */
+.telegram-theme h1,
+.telegram-theme h2,
+.telegram-theme h3,
+.telegram-theme h4,
+.telegram-theme h5,
+.telegram-theme h6 {
+  font-family: var(--font-playfair), "Playfair Display", ui-serif, Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.telegram-theme .font-mono,
+.telegram-theme [class*="font-mono"] {
+  font-family: var(--font-ibm-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+}
+
 .telegram-theme {
+  --font-serif: var(--font-playfair), "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: var(--font-ibm-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
   --background: #0f1419;
   --foreground: #f5f3ff;
   --card: #1a1f2e;

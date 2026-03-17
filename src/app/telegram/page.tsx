@@ -2,13 +2,15 @@ import { TelegramForm } from "@/components/telegram-form";
 import { Eye, TrendingUp, Radio, Zap } from "lucide-react";
 import Image from "next/image";
 
+const C = "w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8";
+
 export default function TelegramPage() {
   return (
     <div className="telegram-theme dark min-h-screen" style={{ backgroundColor: "#0f1419", color: "#f5f3ff" }}>
 
       {/* Nav */}
       <nav className="border-b sticky top-0 z-50 backdrop-blur-sm" style={{ borderColor: "#334155", backgroundColor: "rgba(15,20,25,0.85)" }}>
-        <div className="container flex items-center justify-between py-4">
+        <div className={`${C} flex items-center justify-between py-4`}>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center" style={{ borderColor: "#f59e0b" }}>
               <div className="w-1 h-1 rounded-full" style={{ backgroundColor: "#f59e0b" }} />
@@ -30,7 +32,7 @@ export default function TelegramPage() {
             priority
           />
         </div>
-        <div className="container relative z-10">
+        <div className={`${C} relative z-10`}>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <div className="space-y-8">
@@ -38,7 +40,7 @@ export default function TelegramPage() {
                 <p className="font-mono text-sm tracking-widest uppercase" style={{ color: "#f59e0b" }}>
                   Institutional Market Intelligence
                 </p>
-                <h1 className="text-5xl md:text-6xl font-serif font-bold leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold leading-tight" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>
                   Real-time Market Structure
                 </h1>
                 <p className="text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
@@ -69,7 +71,7 @@ export default function TelegramPage() {
               <div className="text-center space-y-3">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>Founding Allocation: Limited to 25 members</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-mono font-bold" style={{ color: "#f59e0b" }}>$600</span>
+                  <span className="text-4xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$600</span>
                   <span style={{ color: "#cbd5e1" }}>/month</span>
                 </div>
                 <p className="text-xs" style={{ color: "#cbd5e1" }}>Rate locked for life of membership</p>
@@ -81,10 +83,10 @@ export default function TelegramPage() {
 
       {/* What You Get */}
       <section className="py-20 md:py-32" style={{ backgroundColor: "rgba(26,31,46,0.3)" }}>
-        <div className="container">
+        <div className={C}>
           <div className="mb-16 space-y-4">
-            <p className="font-mono text-sm tracking-widest uppercase" style={{ color: "#f59e0b" }}>What You Get</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold">Institutional Trading Framework</h2>
+            <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>What You Get</p>
+            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Institutional Trading Framework</h2>
           </div>
           <div className="space-y-8">
             {/* Row 1 */}
@@ -95,7 +97,7 @@ export default function TelegramPage() {
                     <Eye className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-serif font-bold">Real-time Structure Mapping</h3>
+                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Real-time Structure Mapping</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       Trend identification, liquidity analysis, positioning assessment, and exhaustion signals delivered as market inflection points develop—not forced daily posts.
                     </p>
@@ -113,7 +115,7 @@ export default function TelegramPage() {
                     <TrendingUp className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-serif font-bold">Institutional Frameworks</h3>
+                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Institutional Frameworks</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       Momentum, divergence, and narrative shift analysis across BTC, FX, and futures markets. The same frameworks used in managing hundreds of millions in capital.
                     </p>
@@ -129,7 +131,7 @@ export default function TelegramPage() {
                     <Radio className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-serif font-bold">Private Telegram Channel</h3>
+                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Private Telegram Channel</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       One-way broadcast of real-time market intelligence. No group chat noise. No constant posting. No recycled content. Just institutional-grade market context.
                     </p>
@@ -147,7 +149,7 @@ export default function TelegramPage() {
                     <Zap className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-serif font-bold">Learn to Read Markets</h3>
+                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Learn to Read Markets</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       This is not a signal service. You will learn how to map structure and read positioning in real time—building the skills that institutional traders use daily.
                     </p>
@@ -161,7 +163,7 @@ export default function TelegramPage() {
 
       {/* About Mark */}
       <section className="py-20 md:py-32">
-        <div className="container">
+        <div className={C}>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <Image
@@ -174,8 +176,8 @@ export default function TelegramPage() {
             </div>
             <div className="space-y-8">
               <div className="space-y-4">
-                <p className="font-mono text-sm tracking-widest uppercase" style={{ color: "#f59e0b" }}>About the Founder</p>
-                <h2 className="text-4xl md:text-5xl font-serif font-bold">Mark Schaefer</h2>
+                <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>About the Founder</p>
+                <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Mark Schaefer</h2>
                 <p className="text-xl" style={{ color: "#cbd5e1" }}>30+ years managing institutional capital across FX, futures, and crypto</p>
               </div>
               <div className="space-y-6">
@@ -199,11 +201,11 @@ export default function TelegramPage() {
                   </p>
                   <div className="flex gap-8">
                     <div>
-                      <p className="text-2xl font-mono font-bold" style={{ color: "#f59e0b" }}>+25%</p>
+                      <p className="text-2xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>+25%</p>
                       <p className="text-xs" style={{ color: "#cbd5e1" }}>2008</p>
                     </div>
                     <div>
-                      <p className="text-2xl font-mono font-bold" style={{ color: "#f59e0b" }}>+23%</p>
+                      <p className="text-2xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>+23%</p>
                       <p className="text-xs" style={{ color: "#cbd5e1" }}>2009</p>
                     </div>
                   </div>
@@ -216,11 +218,11 @@ export default function TelegramPage() {
 
       {/* Request Access */}
       <section className="py-20 md:py-32" style={{ backgroundColor: "rgba(26,31,46,0.5)" }}>
-        <div className="container">
+        <div className={C}>
           <div className="max-w-2xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <p className="font-mono text-sm tracking-widest uppercase" style={{ color: "#f59e0b" }}>Request Access</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold">Join the Founding Group</h2>
+              <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Request Access</p>
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Join the Founding Group</h2>
               <p className="text-lg" style={{ color: "#cbd5e1" }}>
                 If this aligns with how you approach markets and you&apos;re looking for deeper real-time context, request access below. Access is selective.
               </p>
@@ -232,7 +234,7 @@ export default function TelegramPage() {
 
       {/* Footer */}
       <footer className="border-t py-12" style={{ borderColor: "rgba(51,65,85,.3)", backgroundColor: "rgba(15,20,25,.5)" }}>
-        <div className="container">
+        <div className={C}>
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: "#f59e0b" }}>
