@@ -97,7 +97,7 @@ export default function TelegramPage() {
                     <Eye className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Real-time Structure Mapping</h3>
+                    <h3 className="text-3xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Real-time Structure Mapping</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       Trend identification, liquidity analysis, and positioning insights highlighting key market inflection points.
                     </p>
@@ -115,7 +115,7 @@ export default function TelegramPage() {
                     <TrendingUp className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Institutional Frameworks</h3>
+                    <h3 className="text-3xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Institutional Frameworks</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       Momentum, divergence, and narrative shift analysis across BTC, FX, and futures markets. The same frameworks used in managing hundreds of millions in capital.
                     </p>
@@ -131,7 +131,7 @@ export default function TelegramPage() {
                     <Radio className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Private Telegram Channel</h3>
+                    <h3 className="text-3xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Private Telegram Channel</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       One-way broadcast of real-time market intelligence. No group chat noise. No constant posting. No recycled content. Just institutional-grade market context.
                     </p>
@@ -149,7 +149,7 @@ export default function TelegramPage() {
                     <Zap className="w-6 h-6" style={{ color: "#f59e0b" }} />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Learn to Read Markets</h3>
+                    <h3 className="text-3xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Learn to Read Markets</h3>
                     <p style={{ color: "#cbd5e1" }}>
                       This is not a signal service. You will learn how to map structure and read positioning in real time—building the skills that institutional traders use daily.
                     </p>
