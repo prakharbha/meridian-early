@@ -182,15 +182,15 @@ export default function TelegramPage() {
               </div>
               <div className="space-y-6">
                 <div className="border-l-2 pl-6 space-y-2" style={{ borderColor: "#f59e0b" }}>
-                  <h3 className="font-semibold" style={{ color: "#f59e0b" }}>Barclays</h3>
+                  <h3 className="text-4xl font-semibold" style={{ color: "#f59e0b" }}>Barclays</h3>
                   <p style={{ color: "#cbd5e1" }}>Head British Pound Trader / Market Maker</p>
                 </div>
                 <div className="border-l-2 pl-6 space-y-2" style={{ borderColor: "#f59e0b" }}>
-                  <h3 className="font-semibold" style={{ color: "#f59e0b" }}>Eagle Trading Systems</h3>
+                  <h3 className="text-4xl font-semibold" style={{ color: "#f59e0b" }}>Eagle Trading Systems</h3>
                   <p style={{ color: "#cbd5e1" }}>PM, Systematic FX &amp; Futures (managed hundreds of millions)</p>
                 </div>
                 <div className="border-l-2 pl-6 space-y-2" style={{ borderColor: "#f59e0b" }}>
-                  <h3 className="font-semibold" style={{ color: "#f59e0b" }}>Centiva Capital</h3>
+                  <h3 className="text-4xl font-semibold" style={{ color: "#f59e0b" }}>Centiva Capital</h3>
                   <p style={{ color: "#cbd5e1" }}>PM, Systematic Currencies</p>
                 </div>
                 <div className="rounded-lg p-6 border" style={{ backgroundColor: "#1a1f2e", borderColor: "#334155" }}>
