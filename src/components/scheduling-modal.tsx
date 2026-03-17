@@ -15,7 +15,12 @@ interface ScheduledSlot {
     time: string; // ISO string of the booked time
 }
 
-export function SchedulingModal() {
+interface SchedulingModalProps {
+    triggerClassName?: string;
+    triggerLabel?: string;
+}
+
+export function SchedulingModal({ triggerClassName, triggerLabel }: SchedulingModalProps = {}) {
     const [isOpen, setIsOpen] = useState(false);
     const [date, setDate] = useState<Date | undefined>(undefined);
     const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
@@ -178,8 +183,8 @@ export function SchedulingModal() {
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-                <Button variant="outline" className="border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 px-6 py-6 text-base font-medium transition-all shadow-sm">
-                    Schedule a meeting with Us
+                <Button variant="outline" className={triggerClassName ?? "border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 px-6 py-6 text-base font-medium transition-all shadow-sm"}>
+                    {triggerLabel ?? "Schedule a meeting with Us"}
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-3xl border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 p-0 overflow-hidden">

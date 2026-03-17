@@ -175,3 +175,37 @@
 .pulse-glow {
   animation: pulse-glow-amber 2s infinite;
 }
+
+.secondary-button {
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  transition: all .3s;
+}
+.secondary-button:hover {
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.telegram-theme .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .telegram-theme .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .telegram-theme .container {
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

@@ -1,5 +1,4 @@
-import { WaitlistForm } from "@/components/waitlist-form";
-import { SchedulingModal } from "@/components/scheduling-modal";
+import { TelegramForm } from "@/components/telegram-form";
 import { Eye, TrendingUp, Radio, Zap } from "lucide-react";
 import Image from "next/image";
 
@@ -226,10 +225,7 @@ export default function TelegramPage() {
                 If this aligns with how you approach markets and you&apos;re looking for deeper real-time context, request access below. Access is selective.
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-4">
-              <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
-              <SchedulingModal />
-            </div>
+            <TelegramForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
           </div>
         </div>
       </section>
