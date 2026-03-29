@@ -67,11 +67,12 @@ export default function NewLandingPage() {
             <div className="flex flex-col items-center justify-center space-y-8">
               <div className="text-center space-y-3">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>Founding Allocation: Limited to 25 members</p>
-                <div className="flex items-baseline justify-center gap-2">
+                <div className="flex items-baseline justify-center gap-3">
+                  <span className="text-2xl line-through" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$1,000</span>
                   <span className="text-4xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$600</span>
                   <span style={{ color: "#cbd5e1" }}>/month</span>
                 </div>
-                <p className="text-xs" style={{ color: "#cbd5e1" }}>Rate locked for life of membership</p>
+                <p className="text-xs" style={{ color: "#f59e0b" }}>Founding rate — locked for life of membership</p>
               </div>
             </div>
           </div>
