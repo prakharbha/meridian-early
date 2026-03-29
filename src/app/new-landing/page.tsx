@@ -18,7 +18,10 @@ export default function NewLandingPage() {
             </div>
             <span className="text-lg font-semibold tracking-wide">MERIDIAN</span>
           </div>
-          <div className="text-sm" style={{ color: "#cbd5e1" }}>15 spots remaining</div>
+          <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "#f59e0b" }}>
+              <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#f59e0b" }} />
+              Last few spots remaining
+            </div>
         </div>
       </nav>
 
@@ -61,14 +64,6 @@ export default function NewLandingPage() {
 
             {/* Right */}
             <div className="flex flex-col items-center justify-center space-y-8">
-              <div className="relative w-48 h-48 md:w-56 md:h-56 animate-fadeInUp pulse-glow">
-                <Image
-                  src="/telegram/meridian-scarcity-badge-2ndKAYu4cYgddMksfUjYnF.webp"
-                  alt="15 spots remaining"
-                  fill
-                  className="object-contain"
-                />
-              </div>
               <div className="text-center space-y-3">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>Founding Allocation: Limited to 25 members</p>
                 <div className="flex items-baseline justify-center gap-2">
@@ -85,12 +80,24 @@ export default function NewLandingPage() {
       {/* What Meridian Compass Is */}
       <section className="py-20 md:py-32" style={{ backgroundColor: "rgba(26,31,46,0.3)" }}>
         <div className={C}>
-          <div className="max-w-4xl space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What Meridian Compass Is</h2>
-            <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-              <p>There&apos;s no shortage of market information. The problem is none of it comes with a filter.</p>
-              <p className="font-semibold text-2xl" style={{ color: "#f59e0b" }}>Meridian Compass is that filter.</p>
-              <p>Thirty years of institutional experience distilled into one thing — helping you understand what moves markets, what&apos;s noise, and how to position yourself before the move, not after.</p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What Meridian Compass Is</h2>
+              <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
+                <p>There&apos;s no shortage of market information. The problem is none of it comes with a filter.</p>
+                <p className="font-semibold text-2xl" style={{ color: "#f59e0b" }}>Meridian Compass is that filter.</p>
+                <p>Thirty years of institutional experience distilled into one thing — helping you understand what moves markets, what&apos;s noise, and how to position yourself before the move, not after.</p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/new-img/Telegram-1.png"
+                  alt="Meridian Compass market intelligence"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -99,11 +106,23 @@ export default function NewLandingPage() {
       {/* Who This Is For */}
       <section className="py-20 md:py-32">
         <div className={C}>
-          <div className="max-w-4xl space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Who This Is For</h2>
-            <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-              <p>Professional traders, portfolio managers, family offices, small funds, corporate treasurers, and serious independent traders who already understand the basics and are ready to think institutionally.</p>
-              <p className="font-semibold" style={{ color: "#f5f3ff" }}>This is not a beginner service. But if you&apos;re serious about developing a real edge — you&apos;ll fit in.</p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center md:order-last">
+              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/new-img/Telegram-2.jpg"
+                  alt="Who Meridian Compass is for"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Who This Is For</h2>
+              <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
+                <p>Professional traders, portfolio managers, family offices, small funds, corporate treasurers, and serious independent traders who already understand the basics and are ready to think institutionally.</p>
+                <p className="font-semibold" style={{ color: "#f5f3ff" }}>This is not a beginner service. But if you&apos;re serious about developing a real edge — you&apos;ll fit in.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -112,9 +131,21 @@ export default function NewLandingPage() {
       {/* What You'll Develop */}
       <section className="py-20 md:py-32" style={{ backgroundColor: "rgba(26,31,46,0.5)" }}>
         <div className={C}>
-          <div className="mb-16 space-y-4">
-            <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Core Skills</p>
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You&apos;ll Develop</h2>
+          <div className="mb-16 grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Core Skills</p>
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You&apos;ll Develop</h2>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-full max-w-sm aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/new-img/Telegram-3.jpg"
+                  alt="Skills you'll develop"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -219,16 +250,28 @@ export default function NewLandingPage() {
       {/* What Most Trading Education Gets Wrong */}
       <section className="py-20 md:py-32">
         <div className={C}>
-          <div className="max-w-4xl space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What Most Trading Education Gets Wrong</h2>
-            <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-              <p>Most trading courses and mentorship programs are built around patterns and setups. Entry here, stop there, target there.</p>
-              <p>What they rarely teach — because most educators have never lived it — is how to think through different market environments. Risk-on, risk-off, black swan events, central bank cycles, geopolitical shocks. The setups that work in one environment get you killed in another.</p>
-              <p>Managing real capital through the 2008 financial crisis, the SNB peg removal, the COVID crash, and now a Middle East conflict that&apos;s repricing energy markets globally — that&apos;s a different education entirely.</p>
-              <div className="p-6 rounded-lg bg-slate-900/50 border-l-4 border-amber-500 mt-8">
-                <p className="font-bold text-2xl" style={{ color: "#f5f3ff", fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>
-                  This is not a course. This is not a signal service. This is a seat at the desk.
-                </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What Most Trading Education Gets Wrong</h2>
+              <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
+                <p>Most trading courses and mentorship programs are built around patterns and setups. Entry here, stop there, target there.</p>
+                <p>What they rarely teach — because most educators have never lived it — is how to think through different market environments. Risk-on, risk-off, black swan events, central bank cycles, geopolitical shocks. The setups that work in one environment get you killed in another.</p>
+                <p>Managing real capital through the 2008 financial crisis, the SNB peg removal, the COVID crash, and now a Middle East conflict that&apos;s repricing energy markets globally — that&apos;s a different education entirely.</p>
+                <div className="p-6 rounded-lg bg-slate-900/50 border-l-4 border-amber-500 mt-8">
+                  <p className="font-bold text-2xl" style={{ color: "#f5f3ff", fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>
+                    This is not a course. This is not a signal service. This is a seat at the desk.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/new-img/Telegram-4.jpg"
+                  alt="What most trading education gets wrong"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -238,12 +281,24 @@ export default function NewLandingPage() {
       {/* What You Get */}
       <section className="py-20 md:py-32" style={{ backgroundColor: "rgba(26,31,46,0.3)" }}>
         <div className={C}>
-          <div className="max-w-4xl space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You Get</h2>
-            <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-              <p><strong className="text-2xl" style={{ color: "#f5f3ff" }}>Private Telegram broadcast</strong> — real-time market structure, key levels, momentum shifts, and geopolitical context across FX, crypto, and futures. Delivered as markets move, not after.</p>
-              <p>No group chat noise. No constant posting. No recycled content. No signals.</p>
-              <p className="font-semibold text-2xl" style={{ color: "#f59e0b" }}>Just institutional grade market intelligence — daily.</p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center md:order-last">
+              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/new-img/Telegram-5.jpg"
+                  alt="What you get with Meridian Compass"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You Get</h2>
+              <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
+                <p><strong className="text-2xl" style={{ color: "#f5f3ff" }}>Private Telegram broadcast</strong> — real-time market structure, key levels, momentum shifts, and geopolitical context across FX, crypto, and futures. Delivered as markets move, not after.</p>
+                <p>No group chat noise. No constant posting. No recycled content. No signals.</p>
+                <p className="font-semibold text-2xl" style={{ color: "#f59e0b" }}>Just institutional grade market intelligence — daily.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -255,7 +310,7 @@ export default function NewLandingPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <Image
-                src="/telegram/mark-schaefer_9adecbac.jpg"
+                src="/new-img/mark-portrait.jpg"
                 alt="Mark Schaefer - Founder"
                 width={320}
                 height={320}
