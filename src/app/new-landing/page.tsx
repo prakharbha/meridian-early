@@ -2,6 +2,7 @@ import { TelegramForm } from "@/components/telegram-form";
 import { Eye, TrendingUp, Radio, Zap, Target, BookOpen, Clock, Activity, Flag, Calendar } from "lucide-react";
 import Image from "next/image";
 import { SchedulingModal } from "@/components/scheduling-modal";
+import { ZoomImage } from "@/components/zoom-image";
 
 const C = "w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8";
 
@@ -90,14 +91,7 @@ export default function NewLandingPage() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/new-img/Telegram-1.png"
-                  alt="Meridian Compass market intelligence"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ZoomImage src="/new-img/Telegram-1.png" alt="Meridian Compass market intelligence" />
             </div>
           </div>
         </div>
@@ -108,14 +102,7 @@ export default function NewLandingPage() {
         <div className={C}>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:order-last">
-              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/new-img/Telegram-2.jpg"
-                  alt="Who Meridian Compass is for"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ZoomImage src="/new-img/Telegram-2.jpg" alt="Who Meridian Compass is for" />
             </div>
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Who This Is For</h2>
@@ -137,14 +124,7 @@ export default function NewLandingPage() {
               <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You&apos;ll Develop</h2>
             </div>
             <div className="flex justify-center md:justify-end">
-              <div className="relative w-full max-w-sm aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/new-img/Telegram-3.jpg"
-                  alt="Skills you'll develop"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ZoomImage src="/new-img/Telegram-3.jpg" alt="Skills you'll develop" />
             </div>
           </div>
           
@@ -265,14 +245,7 @@ export default function NewLandingPage() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/new-img/Telegram-4.jpg"
-                  alt="What most trading education gets wrong"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ZoomImage src="/new-img/Telegram-4.jpg" alt="What most trading education gets wrong" />
             </div>
           </div>
         </div>
@@ -283,14 +256,7 @@ export default function NewLandingPage() {
         <div className={C}>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:order-last">
-              <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/new-img/Telegram-5.jpg"
-                  alt="What you get with Meridian Compass"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ZoomImage src="/new-img/Telegram-5.jpg" alt="What you get with Meridian Compass" />
             </div>
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>What You Get</h2>
@@ -312,9 +278,9 @@ export default function NewLandingPage() {
               <Image
                 src="/new-img/mark-portrait.jpg"
                 alt="Mark Schaefer - Founder"
-                width={320}
-                height={320}
-                className="rounded-lg shadow-2xl object-cover w-64 h-64 md:w-80 md:h-80"
+                width={400}
+                height={500}
+                className="rounded-lg shadow-2xl object-contain w-full max-w-xs md:max-w-sm"
               />
             </div>
             <div className="space-y-8">
