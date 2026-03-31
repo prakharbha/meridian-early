@@ -51,6 +51,9 @@ export default function NewLandingPage() {
                 <p className="text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
                   The closest thing to having a 30-year institutional PM beside you — in real time, as markets move.
                 </p>
+                <p className="text-base leading-relaxed" style={{ color: "#94a3b8" }}>
+                  30 years on institutional trading desks. Barclays. ABN Amro. Eagle. Centiva. Now managing capital — and sharing the same frameworks daily.
+                </p>
               </div>
               <div className="space-y-4">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>
@@ -66,13 +69,12 @@ export default function NewLandingPage() {
             {/* Right */}
             <div className="flex flex-col items-center justify-center space-y-8">
               <div className="text-center space-y-3">
-                <p className="text-sm" style={{ color: "#cbd5e1" }}>Founding Allocation: Limited to 25 members</p>
-                <div className="flex items-baseline justify-center gap-3">
-                  <span className="text-2xl line-through" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$1,000</span>
-                  <span className="text-4xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$600</span>
-                  <span style={{ color: "#cbd5e1" }}>/month</span>
+                <p className="text-sm font-bold tracking-wide uppercase" style={{ color: "#f59e0b" }}>Limited Founding Spots Remaining</p>
+                <div className="flex flex-col items-center justify-center gap-1">
+                  <span className="text-lg line-through" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Standard Rate: $1,000/month</span>
+                  <span className="text-2xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Founding Rate: $600/month</span>
                 </div>
-                <p className="text-xs" style={{ color: "#f59e0b" }}>Founding rate — locked for life of membership</p>
+                <p className="text-xs" style={{ color: "#cbd5e1" }}>— locked permanently for life of membership</p>
               </div>
             </div>
           </div>
