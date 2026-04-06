@@ -71,8 +71,11 @@ export default function NewLandingPage() {
               <div className="text-center space-y-3">
                 <p className="text-sm font-bold tracking-wide uppercase" style={{ color: "#f59e0b" }}>Limited Founding Spots Remaining</p>
                 <div className="flex flex-col items-center justify-center gap-1">
-                  <span className="text-lg line-through" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Standard Rate: $1,000/month</span>
-                  <span className="text-2xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Founding Rate: $600/month</span>
+                  <span className="text-lg" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Standard Rate: $1,000/month</span>
+                  <span className="text-2xl font-bold text-center" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>
+                    Founding Rate: $600/month
+                    <span className="block text-sm font-normal mt-1 text-[#f59e0b]">-- only for next 11 subscribers / seats</span>
+                  </span>
                 </div>
                 <p className="text-xs" style={{ color: "#cbd5e1" }}>— locked permanently for life of membership</p>
               </div>
@@ -110,7 +113,7 @@ export default function NewLandingPage() {
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Who This Is For</h2>
               <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-                <p>Professional traders, portfolio managers, family offices, small funds, corporate treasurers, and serious independent traders who already understand the basics and are ready to think institutionally.</p>
+                <p>Professional traders, portfolio managers, family offices, small funds, and serious independent traders who already understand the basics and are ready to think institutionally.</p>
                 <p className="font-semibold" style={{ color: "#f5f3ff" }}>This is not a beginner service. But if you&apos;re serious about developing a real edge — you&apos;ll fit in.</p>
               </div>
             </div>
@@ -189,7 +192,7 @@ export default function NewLandingPage() {
                     <span className="block font-semibold" style={{ color: "#f5f3ff" }}>— the lesson most traders never learn</span>
                     <p>When central bank intervention risk is real you don&apos;t trade against it. That&apos;s the obvious lesson.</p>
                     <p>But here&apos;s what most educators never tell you — sometimes you don&apos;t want to trade with them either.</p>
-                    <p>The SNB pulling the EUR/CHF peg wiped accounts on both sides in seconds. The BOJ is the same dynamic right now. The institutional answer isn&apos;t which side to be on — it&apos;s recognizing that some setups aren&apos;t worth the risk and having the discipline to stand aside.</p>
+                    <p>The SNB pulling the EUR/CHF peg wiped out accounts that thought it was safe to be long in front of the Central Bank bid in seconds. The BOJ is the same dynamic right now. The institutional answer isn&apos;t which side to be on — it&apos;s recognizing that some setups aren&apos;t worth the risk and having the discipline to stand aside.</p>
                     <p className="italic pt-2">Knowing when NOT to trade is one of the most valuable skills in this business. It&apos;s also one of the least taught.</p>
                   </div>
                 </div>
