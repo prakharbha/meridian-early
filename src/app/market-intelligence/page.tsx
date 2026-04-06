@@ -113,7 +113,7 @@ export default function NewLandingPage() {
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Who This Is For</h2>
               <div className="space-y-6 text-xl leading-relaxed" style={{ color: "#cbd5e1" }}>
-                <p>Professional traders, portfolio managers, family offices, small funds, and serious independent traders who already understand the basics and are ready to think institutionally.</p>
+                <p>Meridian Compass is designed for experienced traders, portfolio managers, and investors who already understand markets and want deeper context around structure, positioning, and risk.</p>
                 <p className="font-semibold" style={{ color: "#f5f3ff" }}>This is not a beginner service. But if you&apos;re serious about developing a real edge — you&apos;ll fit in.</p>
               </div>
             </div>
