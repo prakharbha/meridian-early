@@ -49,7 +49,7 @@ export default function TelegramPage() {
               </div>
               <div className="space-y-4">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>
-                  The channel is active now. Founding members are already inside.
+                  The channel is active now. Members are already inside.
                 </p>
                 <div className="flex items-center gap-3" style={{ color: "#f59e0b" }}>
                   <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#f59e0b" }} />
@@ -69,9 +69,9 @@ export default function TelegramPage() {
                 />
               </div>
               <div className="text-center space-y-3">
-                <p className="text-sm" style={{ color: "#cbd5e1" }}>Founding Allocation: Limited to 25 members</p>
+                <p className="text-sm" style={{ color: "#cbd5e1" }}>Membership: Limited to 25 members</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$600</span>
+                  <span className="text-4xl font-bold" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$1,000</span>
                   <span style={{ color: "#cbd5e1" }}>/month</span>
                 </div>
                 <p className="text-xs" style={{ color: "#cbd5e1" }}>Rate locked for life of membership</p>
@@ -222,7 +222,7 @@ export default function TelegramPage() {
           <div className="max-w-2xl mx-auto space-y-12">
             <div className="text-center space-y-4">
               <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Request Access</p>
-              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Join the Founding Group</h2>
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Join Meridian Compass</h2>
               <p className="text-lg" style={{ color: "#cbd5e1" }}>
                 If this aligns with how you approach markets and you&apos;re looking for deeper real-time context, request access below. Access is selective.
               </p>

@@ -112,10 +112,7 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                 <div className="space-y-6 mb-8 text-neutral-800 text-sm">
                     <div className="space-y-1 text-base">
                         <p>
-                            <strong className="text-neutral-900 font-medium">Standard Membership:</strong> $1,000/month
-                        </p>
-                        <p>
-                            <strong className="text-neutral-900 font-medium">Founding Allocation:</strong> $600/month
+                            <strong className="text-neutral-900 font-medium">Membership:</strong> $1,000/month
                         </p>
                         <ul className="list-none space-y-1 text-neutral-600 pt-2 text-sm">
                             <li className="flex gap-2"><span className="text-neutral-400">•</span>25 spots total</li>
@@ -188,7 +185,7 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                                 disabled={mutation.isPending}
                                 className="w-full bg-neutral-900 text-white hover:bg-black font-medium"
                             >
-                                {mutation.isPending ? "Submitting..." : "Request Founding Access"}
+                                {mutation.isPending ? "Submitting..." : "Request Access"}
                             </Button>
                             <p className="text-center text-xs mt-3 text-neutral-500 px-2 leading-relaxed">
                                 If you’re unsure whether Meridian Compass is the right fit, feel free to reach out before requesting access.

@@ -57,7 +57,7 @@ export default function NewLandingPage() {
               </div>
               <div className="space-y-4">
                 <p className="text-sm" style={{ color: "#cbd5e1" }}>
-                  The channel is active now. Founding members are already inside.
+                  The channel is active now. Members are already inside.
                 </p>
                 <div className="flex items-center gap-3" style={{ color: "#f59e0b" }}>
                   <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#f59e0b" }} />
@@ -69,11 +69,10 @@ export default function NewLandingPage() {
             {/* Right */}
             <div className="flex flex-col items-center justify-center space-y-8">
               <div className="text-center space-y-3">
-                <p className="text-sm font-bold tracking-wide uppercase" style={{ color: "#f59e0b" }}>Limited Founding Spots Remaining</p>
+                <p className="text-sm font-bold tracking-wide uppercase" style={{ color: "#f59e0b" }}>Limited Spots Remaining</p>
                 <div className="flex flex-col items-center justify-center gap-1">
-                  <span className="text-lg" style={{ color: "#64748b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Standard Rate: $1,000/month</span>
                   <span className="text-2xl font-bold text-center" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>
-                    Founding Rate: $600/month
+                    $1,000/month
                     <span className="block text-sm font-normal mt-1 text-[#f59e0b]">-- only for next 11 subscribers / seats</span>
                   </span>
                 </div>
@@ -341,16 +340,15 @@ export default function NewLandingPage() {
             <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Membership</h2>
             <p className="text-lg" style={{ color: "#cbd5e1" }}>Access is selective.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Founding */}
+          <div className="max-w-2xl mx-auto">
             <div className="institutional-card border border-amber-500 rounded-xl p-8 bg-amber-900/10 hover:bg-amber-900/20 transition-colors shadow-lg shadow-amber-900/20">
               <div className="space-y-6">
                 <div className="flex justify-between items-center border-b border-amber-500/30 pb-4">
-                  <h3 className="text-2xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Founding Allocation</h3>
+                  <h3 className="text-2xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Membership</h3>
                   <span className="px-3 py-1 text-xs font-semibold rounded-full" style={{ backgroundColor: "rgba(245,158,11,.2)", color: "#f59e0b" }}>Active</span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold tracking-tight" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$600</span>
+                  <span className="text-5xl font-bold tracking-tight" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$1,000</span>
                   <span className="text-lg" style={{ color: "#cbd5e1" }}>/month</span>
                 </div>
                 <ul className="space-y-4 text-base" style={{ color: "#cbd5e1" }}>
@@ -364,27 +362,7 @@ export default function NewLandingPage() {
                   </li>
                   <li className="flex gap-3 items-center">
                     <div className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
-                    Founding allocation still open
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            {/* Standard */}
-            <div className="institutional-card border border-slate-700 rounded-xl p-8 bg-slate-800/20 opacity-90 transition-colors hover:bg-slate-800/30">
-              <div className="space-y-6">
-                <div className="flex justify-between items-center border-b border-slate-700 pb-4">
-                  <h3 className="text-2xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif", color: "#94a3b8" }}>Standard Rate</h3>
-                  <span className="px-3 py-1 text-xs font-semibold rounded-full bg-slate-800 text-slate-400">Future</span>
-                </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold tracking-tight text-slate-400" style={{ fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>$1,000</span>
-                  <span className="text-lg text-slate-500">/month</span>
-                </div>
-                <ul className="space-y-4 text-base text-slate-400">
-                  <li className="flex gap-3 items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0" />
-                    Standard pricing after founding allocation fills
+                    Allocation still open
                   </li>
                 </ul>
               </div>
@@ -399,7 +377,7 @@ export default function NewLandingPage() {
           <div className="max-w-2xl mx-auto space-y-12">
             <div className="text-center space-y-4 border-b pb-12" style={{ borderColor: "rgba(51,65,85,.5)" }}>
               <p className="text-sm tracking-widest uppercase" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>Request Access</p>
-              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Join the Founding Group</h2>
+              <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-playfair, 'Playfair Display'), serif" }}>Request Access</h2>
               <p className="text-lg" style={{ color: "#cbd5e1" }}>
                 If this aligns with how you approach markets and you&apos;re looking for deeper real-time context — request access below.
               </p>

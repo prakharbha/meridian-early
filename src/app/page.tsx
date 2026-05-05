@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
 
                 <p className="font-medium text-neutral-900">
-                  The channel is active now. Founding members are already inside.
+                  The channel is active now. Members are already inside.
                 </p>
 
 
