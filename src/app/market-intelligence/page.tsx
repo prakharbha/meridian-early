@@ -73,7 +73,6 @@ export default function NewLandingPage() {
                 <div className="flex flex-col items-center justify-center gap-1">
                   <span className="text-2xl font-bold text-center" style={{ color: "#f59e0b", fontFamily: "var(--font-ibm-plex-mono, 'IBM Plex Mono'), monospace" }}>
                     $1,000/month
-                    <span className="block text-sm font-normal mt-1 text-[#f59e0b]">-- only for next 11 subscribers / seats</span>
                   </span>
                 </div>
                 <p className="text-xs" style={{ color: "#cbd5e1" }}>— locked permanently for life of membership</p>
