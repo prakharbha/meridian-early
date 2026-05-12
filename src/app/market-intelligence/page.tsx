@@ -19,10 +19,7 @@ export default function NewLandingPage() {
             </div>
             <span className="text-lg font-semibold tracking-wide">MERIDIAN</span>
           </div>
-          <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "#f59e0b" }}>
-              <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#f59e0b" }} />
-              Last few spots remaining
-            </div>
+
         </div>
       </nav>
 
@@ -131,7 +128,7 @@ export default function NewLandingPage() {
               <ZoomImage src="/new-img/Telegram-3.jpg" alt="Skills you'll develop" />
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* 1 */}
             <div className="institutional-card h-full p-8 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 transition-colors">
@@ -226,7 +223,7 @@ export default function NewLandingPage() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -383,15 +380,15 @@ export default function NewLandingPage() {
             </div>
 
             <TelegramForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
-            
+
             <div className="text-center pt-8 space-y-6">
               <div className="inline-block px-6 py-6 rounded-xl border border-slate-700 bg-slate-800/30 w-full sm:w-auto shadow-sm">
                 <p className="text-lg mb-6" style={{ color: "#cbd5e1" }}>
                   Unsure if Meridian Compass is the right fit?
                 </p>
-                <SchedulingModal 
-                  triggerClassName="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md border border-amber-500 bg-transparent hover:bg-amber-500/10 px-8 text-sm font-medium text-amber-500 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500" 
-                  triggerLabel="Schedule a call" 
+                <SchedulingModal
+                  triggerClassName="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md border border-amber-500 bg-transparent hover:bg-amber-500/10 px-8 text-sm font-medium text-amber-500 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500"
+                  triggerLabel="Schedule a call"
                 />
               </div>
             </div>
